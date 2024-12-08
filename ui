@@ -1,4 +1,4 @@
--- Used by Profit Farm for Jailbreak
+-- Used by Profit Auto Farm for Jailbreak
 -- https://github.com/GhostDuckyy/UI-Libraries (rep for the libraries)
 
 -- don't judge :rage:
@@ -551,7 +551,7 @@ function Library:CreateWindow(windowname,windowinfo)
             SliderNumber.TextSize = 10.000
             SliderNumber.TextXAlignment = Enum.TextXAlignment.Left
              
-            local mouse = game.Players.LocalPlayer:GetMouse()
+            local mouse = game:GetService("Players").LocalPlayer:GetMouse()
             local uis = game:GetService("UserInputService")
             local Value;
 
