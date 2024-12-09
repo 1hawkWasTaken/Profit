@@ -291,7 +291,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
         local PageElements = {}
 
-        function PageElements:addLabel(labelname,labelinfo)
+        function PageElements:addLabel(labelname,labelinfo,labellayout)
             local LabelHolder = Instance.new("Frame")
             local LabelHolderCorner = Instance.new("UICorner")
             local LabelTitle = Instance.new("TextLabel")
@@ -304,6 +304,7 @@ function Library:CreateWindow(windowname,windowinfo)
             LabelHolder.BorderSizePixel = 0
             LabelHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
             LabelHolder.Size = UDim2.new(0, 288, 0, 26)
+            LabelHolder.LayoutOrder = labellayout or 0
             
             LabelHolderCorner.CornerRadius = UDim.new(0, 5)
             LabelHolderCorner.Name = "LabelHolderCorner"
